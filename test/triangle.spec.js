@@ -34,7 +34,7 @@ describe('Triangle', () => {
       expect(() => Triangle.calculateArea(1)).to.throw('Parameter missing or not a number!');
     });
 
-    it('calculateArea() should throw \'Parameter missing or not a number!\' if if called with non-number parameter', () => {
+    it('calculateArea() should throw \'Parameter missing or not a number!\' if called with non-number parameter', () => {
       expect(() => Triangle.calculateArea('a', 1)).to.throw('Parameter missing or not a number!');
     });
   });
