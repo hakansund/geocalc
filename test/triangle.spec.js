@@ -20,4 +20,22 @@ describe('Triangle', () => {
       expect(() => Triangle.calculateCircumference('a', 1)).to.throw('Parameter missing or not a number!');
     });
   });
+
+  describe('Calculation of area', () => {
+    it('calculateArea() should return 0.5 if 1, 1 are passed in', () => {
+      expect(Triangle.calculateArea(1, 1)).to.equal(0.5);
+    });
+
+    it('calculateArea() should return 3 if 2, 2 are passed in', () => {
+      expect(Triangle.calculateArea(2, 2)).to.equal(2);
+    });
+
+    it('calculateArea() should throw \'Parameter missing or not a number!\' if too few parameters are passed in', () => {
+      expect(() => Triangle.calculateArea(1)).to.throw('Parameter missing or not a number!');
+    });
+
+    it('calculateArea() should throw \'Parameter missing or not a number!\' if non-number parameters are passed in', () => {
+      expect(() => Triangle.calculateArea('a', 1)).to.throw('Parameter missing or not a number!');
+    });
+  });
 });
