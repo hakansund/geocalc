@@ -15,6 +15,10 @@ describe('Calculate', () => {
     expect(Geocalc.calculate('polygon', 'area', 5, 1)).to.equal(1.720477400588967);
   });
 
+  it('calculate() should throw \'Circumference not available for polygon!\' if called with parameters \'polygon\', \'circumference\', 5, 1', () => {
+    expect(() => Geocalc.calculate('polygon', 'circumference', 5, 1)).to.throw('Circumference not available for polygon!');
+  });
+
   it('calculate() should throw \'Invalid shape!\' if called with invalid shape', () => {
     expect(() => Geocalc.calculate(undefined, 'area', 1, 1)).to.throw('Invalid shape!');
   });
