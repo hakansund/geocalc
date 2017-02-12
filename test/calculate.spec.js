@@ -23,7 +23,7 @@ describe('Calculate', () => {
     expect(() => Geocalc.calculate('triangle', null, 1, 1)).to.throw('Invalid attribute!');
   });
 
-  it('calculate() should throw \'Invalid values!\' if called with a missing value', () => {
+  it('calculate() should throw \'Invalid value!\' if called with a missing value', () => {
     expect(() => Geocalc.calculate('triangle', 'circumference', 1)).to.throw('Invalid value!');
   });
 });
