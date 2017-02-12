@@ -2,7 +2,7 @@
   "name": "geocalc",
   "version": "0.0.1",
   "description": "A package that makes geometrical calculations",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test",
     "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
