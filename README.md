@@ -1,8 +1,6 @@
 # geocalc
 
-[![Build Status](https://travis-ci.org/hakansund/geocalc.svg?branch=master)](https://travis-ci.org/hakansund/geocalc)
-
-[![Coverage Status](https://coveralls.io/repos/github/hakansund/geocalc/badge.svg?branch=master)](https://coveralls.io/github/hakansund/geocalc?branch=master)
+[![Build Status](https://travis-ci.org/hakansund/geocalc.svg?branch=master)](https://travis-ci.org/hakansund/geocalc) [![Coverage Status](https://coveralls.io/repos/github/hakansund/geocalc/badge.svg?branch=master)](https://coveralls.io/github/hakansund/geocalc?branch=master)
 
 A package that makes geometrical calculations
 
