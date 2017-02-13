@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A package that makes geometrical calculations",
   "main": "lib/index.js",
+  "bin": {
+    "geocalc": "lib/geocalc.js"
+  },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test",
     "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
@@ -25,5 +28,9 @@
     "eslint-plugin-import": "^2.2.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0"
   }
 }

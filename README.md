@@ -6,7 +6,13 @@ A package that makes geometrical calculations
 
 ## Installation
 
+For development or to run tests:
+
     npm install
+
+For use as a library package or CLI program:
+
+    npm install -g
 
 ## Usage
 
@@ -30,6 +36,20 @@ This package has one function `calculate(shape, attribute, firstValue, secondVal
    
     // Area of polygon
     var polygonArea = geocalc.calculate('polygon', 'area', 5, 1); // 1.720477400588967
+
+## CLI
+
+If installed globally the package creates a shell command `geocalc`:
+
+    Usage: geocalc [options]
+
+    Options:
+
+    -h, --help                            output usage information
+    --shape <triangle|rectangle|polygon>  Shape of object [default: triangle]
+    --attribute <area|circumference>      Attribute of object [default: area]
+    --firstValue <n>                      Base of a triangle, the width of a rectangle or sides in a polygon
+    --secondValue <n>                     Height of a triangle, height of a rectangle or side length in a polygon
 
 ## Tests
 
